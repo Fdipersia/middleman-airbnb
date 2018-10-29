@@ -1,0 +1,23 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+
+<div class="container">
+  <div class="card" style="width: 66vw;">
+    <img class="card-img-top" src="https://picsum.photos/200/300?image=1040" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= flat.name %></h5>
+      <h1 class="card-text"><%= flat.description %></h1>
+      <p class="card-text"><%= flat.city_name %></p>
+      <select name="" id="" class="form-control input-lg">
+         <option value="1">1 guest</option>
+         <option value="2">2 guests</option>
+         <option value="3">3 guests</option>
+       </select>
+    </div>
+  </div>
+</div>
